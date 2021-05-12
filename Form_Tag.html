@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+
+	<head>
+		<title>
+			Form Tag Title
+		</title>
+		<style type="text/css">
+			label {
+				display: block;
+				width: 200px;
+				float: left;
+				text-align: right;
+				clear: left;
+			}
+			input, select, textarea, button {
+				vertical-align: middle;
+				margin: 4px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1>Form tag example</h1>
+		<form method="get">
+			<fieldset>
+				<legend> Login Information </legend>
+				<label for="username"> Enter User Name : </label>
+				<input type="text" name="username" id="username" required>
+				<br>
+				<label for="userpass"> Enter Password : </label>
+				<input type="password" name="userpass" id="userpass" required>
+				<br>
+				<label for="useremail"> Enter EmailId : </label>
+				<input type="email" name="useremail" id="useremail" required>
+				<br>
+				<label for="date"> Date Of Birth : </label>
+				<input type="date" name="date" id="date" required>
+				<br>
+			</fieldset>
+			<br>
+			<fieldset>
+				<legend> Personal Information </legend>
+				<label> Hobbies Applicable : </label>
+				<input class="checks" type="checkbox" name="check" value="ch1"> Hobby One
+				<input class="checks" type="checkbox" name="check" value="ch2"> Hobby Two
+				<input class="checks" type="checkbox" name="check" value="ch3"> Hobby Three
+				<input class="checks" type="checkbox" name="check" value="ch4"> Hobby Four
+				<br>
+				<label> Employment Type : </label>
+				<input type="radio" name="radio" value="ra1"> Part-Time
+				<input type="radio" name="radio" value="ra2"> Full-Time
+				<br>
+				<label for="address"> Enter Address : </label>
+				<textarea id="address" name="address"></textarea>
+				<br>
+			</fieldset>
+			<br>
+			<fieldset>
+				<legend> Team Details </legend>
+				<label for="depart"> Select Department : </label>
+				<select name="depart">
+					<option value="op1"> DEV </option>
+					<option value="op2"> QA </option>
+					<option value="op3"> DEVOPS </option>
+					<option value="op4"> PM </option>
+				</select>
+				<br>
+				<label for="range"> Years of Experience : </label>
+				1<input type="range" name="range" min="1" max="10" value="1">10
+				<br>
+				<label for="members"> Team Size : </label>
+				<input type="number" name="members" required>
+				<br>
+				<label for="time"> Reporting Time : </label>
+				<input type="time" name="time" required>
+				<br>
+				<label for="color"> Team Color : </label>
+				<input type="color" name="color" required>
+				<br>
+			</fieldset>
+			<br>
+			<input type="submit" name="Submit">
+			<button>Cancel</button>
+		</form>
+	</body>
+</html>
